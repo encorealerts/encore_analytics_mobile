@@ -1,0 +1,9 @@
+<ion-view view-title="My Feed">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="alert in alerts" hreef="#/app/alerts/{{alert.id}}" ng-click="viewAlert({{alert.id}})">
+        {{alert.subject}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
