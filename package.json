@@ -1,7 +1,7 @@
 {
   "name": "encorealert",
   "version": "1.0.0",
-  "description": "EncoreAlert: An Ionic project",
+  "description": "EncoreAlert",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
@@ -16,6 +16,7 @@
   },
   "cordovaPlugins": [
     "de.appplant.cordova.plugin.background-mode",
-    "de.appplant.cordova.plugin.local-notification"
+    "https://github.com/katzer/cordova-plugin-local-notifications.git",
+    "org.apache.cordova.inappbrowser"
   ]
 }

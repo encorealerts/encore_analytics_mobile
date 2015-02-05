@@ -18,53 +18,14 @@ App.run(function($ionicPlatform, $rootScope, $state, $location, $api, $filter, $
 
     if (window.cordova) {
 
-      cordova.plugins.notification.local.hasPermission(function (granted) {
-        if (!granted) {
-          cordova.plugins.notification.local.registerPermission(function (granted) {});
-        }
-      });
+      $localNotification.init();
 
-      cordova.plugins.notification.local.onadd = function (id, state, json) {
-        // console.log('---- onadd');
-        // console.log(arguments);
-        // alert('on add\n' + Array.apply(null, arguments).join("\n"));
-      };
-
-      cordova.plugins.notification.local.ontrigger = function (id, state, json) {
-        // console.log('---- ontrigger');
-        // console.log(arguments);
-        // alert('on trigger\n' + Array.apply(null, arguments).join("\n"));
-      };
-
-      cordova.plugins.notification.local.onclick = function (id, state, json) {
-        // console.log('---- onclick');
-        // console.log(arguments);
-        // alert('on click\n' + Array.apply(null, arguments).join("\n"));
-        $rootScope.$emit('onClickNotification', id, state, json);
-      };
-
-      cordova.plugins.notification.local.oncancel = function (id, state, json) {
-        // console.log('---- oncancel');
-        // console.log(arguments);
-        // alert('on cancel\n' + Array.apply(null, arguments).join("\n"));
-      };
-
-      window.notificationId = Date.now();
-      window.addNotification = function () {
-        ++window.notificationId;
-        console.log('---- window.notificationId: ' + window.notificationId);
-        cordova.plugins.notification.local.add({
-          id: window.notificationId,
-          title: 'title',
-          message: 'aueee',
-          json: { alertId: 18398 }
-        });
-      };
-
-
-      // window.setTimeout(function () {
-      //   window.addNotification();
-      // }, 10000);
+      // setTimeout(function () {
+      //   window.addNotification({
+      //     message: 'Influencer!',
+      //     json: { alertId: 18398 }
+      //   });
+      // }, 5000);
 
       cordova.plugins.backgroundMode.enable();
 
@@ -72,14 +33,12 @@ App.run(function($ionicPlatform, $rootScope, $state, $location, $api, $filter, $
       cordova.plugins.backgroundMode.onactivate = function () {
         window.refreshInterval = window.setInterval(function () {
           $rootScope.$emit('reloadAlerts');
-        }, 10000);
+        }, 60000);
       };
 
-      cordova.plugins.backgroundMode.ondeactivate = function () {
-        // window.clearInterval(window.refreshInterval);
-      };
-
-      // $localNotification.init();
+      // cordova.plugins.backgroundMode.ondeactivate = function () {
+      //   window.clearInterval(window.refreshInterval);
+      // };
 
       // var counter = 0, id = 1;
       // $localNotification.add({

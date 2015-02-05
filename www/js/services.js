@@ -50,63 +50,43 @@ angular.module('encore.services', [])
   };
 }])
 
-.factory('$localNotification', ['$window', function ($window) {
+.factory('$localNotification', ['$rootScope', '$window', function ($rootScope, $window) {
   return {
     init: function () {
+      cordova.plugins.notification.local.hasPermission(function (granted) {
+        if (!granted) {
+          cordova.plugins.notification.local.registerPermission(function (granted) {});
+        }
+      });
 
-      // document.addEventListener('deviceready', function () {
-      //   cordova.plugins.notification.local.hasPermission(function (granted) {
-      //     console.log('hasPermission: ' + granted);
-      //     if (!granted) {
-      //       cordova.plugins.notification.local.registerPermission(function (granted) {});
-      //     }
-      //   });
-      //
-      //   cordova.plugins.notification.local.onadd = function (id, state, json) {
-      //     console.log('---- onadd');
-      //     console.log(arguments);
-      //     alert('on add\n' + Array.apply(null, arguments).join("\n"));
-      //   };
-      //
-      //   cordova.plugins.notification.local.ontrigger = function (id, state, json) {
-      //     console.log('---- ontrigger');
-      //     console.log(arguments);
-      //     alert('on trigger\n' + Array.apply(null, arguments).join("\n"));
-      //   };
-      //
-      //   cordova.plugins.notification.local.onclick = function (id, state, json) {
-      //     console.log('---- onclick');
-      //     console.log(arguments);
-      //     alert('on click\n' + Array.apply(null, arguments).join("\n"));
-      //   };
-      //
-      //   cordova.plugins.notification.local.oncancel = function (id, state, json) {
-      //     console.log('---- oncancel');
-      //     console.log(arguments);
-      //     alert('on cancel\n' + Array.apply(null, arguments).join("\n"));
-      //   };
-      //
-      //   console.log('---- events binded');
-      //
-      // }, false);
-
-
-      // $window.plugin.notification.local.hasPermission(function (granted) {
-      //   // console.log('Permission has been granted: ' + granted);
-      //   if (!granted) {
-      //     $window.plugin.notification.local.promptForPermission(function (granted) {
-      //       // console.log('Permission has registered granted: ' + granted);
-      //       // this will ask only once for user's permission to display notifications.
-      //     });
-      //   }
-      // });
-      //
-      // $window.plugin.notification.local.onadd     = function (id, state, json) {};
-      // $window.plugin.notification.local.oncancel  = function (id, state, json) {};
-      // $window.plugin.notification.local.ontrigger = function (id, state, json) {};
-      // $window.plugin.notification.local.onclick   = function (id, state, json) {
-      //   $rootScope.$broadcast('localNotificationClicked', id, state, json);
+      // cordova.plugins.notification.local.onadd = function (id, state, json) {
+      //   console.log('---- onadd');
+      //   console.log(arguments);
+      //   alert('on add\n' + Array.apply(null, arguments).join("\n"));
       // };
+
+      // cordova.plugins.notification.local.ontrigger = function (id, state, json) {
+      //   console.log('---- ontrigger');
+      //   console.log(arguments);
+      //   alert('on trigger\n' + Array.apply(null, arguments).join("\n"));
+      // };
+
+      cordova.plugins.notification.local.onclick = function (id, state, json, data) {
+        $rootScope.$emit('onClickNotification', id, state, json, data);
+      };
+
+      // cordova.plugins.notification.local.oncancel = function (id, state, json) {
+      //   console.log('---- oncancel');
+      //   console.log(arguments);
+      //   alert('on cancel\n' + Array.apply(null, arguments).join("\n"));
+      // };
+
+      $window.notificationId = Date.now();
+
+      $window.addNotification = function (notification) {
+        notification.id = ++$window.notificationId;
+        cordova.plugins.notification.local.add(notification);
+      };
     },
     add: function (notification) {
       cordova.plugins.notification.local.add(notification);

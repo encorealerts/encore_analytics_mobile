@@ -49,30 +49,19 @@ angular.module('encore.controllers', [])
 
 })
 
-.controller('TimelineCtrl', function($scope, $rootScope, $api, SERVER_URL) {
+.controller('TimelineCtrl', function($scope, $rootScope, $localNotification, $ionicBackdrop, $api, SERVER_URL) {
 
   $scope.viewAlert = function (id) {
-    window.open(SERVER_URL + $api.signature('/alerts/'+ id), '_system', 'location=yes');
+    window.open(SERVER_URL + $api.signature('/alerts/'+ id), '_blank', 'location=yes');
   };
 
-  $rootScope.$on('localNotificationClicked', function (event, id, state, json) {
-    $scope.viewAlert(json.alertId);
-  });
-
   $scope.loadAlerts = function () {
-
+    $ionicBackdrop.retain();
     var queryString = ($rootScope.alerts && $rootScope.alerts[0]) ? ('?skipTo=' + $rootScope.alerts[0].id) : '';
     $api.get('/alerts' + queryString,
     function onSuccess(alerts) {
       if (queryString == '') { // first run
         $scope.alerts = alerts;
-        // window.addNotification({
-        //   id: Date.now(),
-        //   title: 'title',
-        //   message: '* ' + alerts[0].subject,
-        //   json: { alertId: alerts[0].id }
-        // });
-
       } else { // notify new alerts
         var
           i = 0,
@@ -81,27 +70,28 @@ angular.module('encore.controllers', [])
         for (; i<j; i++) {
           alert = alerts[i];
           $scope.alerts.unshift(alert);
-          // window.addNotification({
-          //   id: Date.now(),
-          //   title: 'title',
-          //   message: alert.subject,
-          //   json: { alertId: alert.id }
-          // });
+          $localNotification.add({
+            autoCancel: true,
+            message: alert.subject,
+            json:    { alertId: alert.id }
+          });
         }
       }
       $rootScope.alerts = $scope.alerts;
-    }, function onError(error) {
+    },
+    function onError(error) {
       console.log(error);
     });
+    $scope.$broadcast('scroll.refreshComplete');//Stop the ion-refresher from spinning
+    $ionicBackdrop.release();
   };
 
   $scope.loadAlerts();
   $rootScope.$on('reloadAlerts', $scope.loadAlerts);
-
-  $rootScope.$on('onClickNotification', function (id, state, json) {
-    $scope.viewAlert(json.alertId);
-    console.log('----- ' + json.alertId);
+  $rootScope.$on('onClickNotification', function (event, id, state, json, data) {
+    $scope.viewAlert((JSON.parse(json)).alertId);
   });
+
 })
 
 .controller('AlertCtrl', function($scope, $rootScope, $stateParams, $filter) {
