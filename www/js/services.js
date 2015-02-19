@@ -1,6 +1,6 @@
 angular.module('encore.services', [])
 
-.factory('$localstorage', ['$window', function($window) {
+.factory('$localStorage', ['$window', function ($window) {
   return {
     set: function (key, value) {
       $window.localStorage[key] = value;
@@ -20,25 +20,25 @@ angular.module('encore.services', [])
   };
 }])
 
-.factory('$api', ['$http', '$state', '$localstorage', 'API_URL', function ($http, $state, $localstorage, API_URL) {
+.factory('$api', ['$http', '$state', '$localStorage', 'API_URL', function ($http, $state, $localStorage, API_URL) {
   return {
     authenticated: function () {
-      var user = $localstorage.getObject('currentUser');
+      var user = $localStorage.getObject('currentUser');
       return (user && user.authentication_token) ? true : false;
     },
     signature: function (path) {
-      var user = $localstorage.getObject('currentUser');
+      var user = $localStorage.getObject('currentUser');
       var connector = path.indexOf('?') > -1 ? '&' : '?';
       return path + connector + 'user_email=' + encodeURIComponent(user.email) + '&user_token=' + user.authentication_token
     },
     logout: function () {
-      var user = $localstorage.getObject('currentUser');
+      var user = $localStorage.getObject('currentUser');
       user.authentication_token = null;
-      $localstorage.setObject('currentUser', user);
+      $localStorage.setObject('currentUser', user);
       $state.go('login');
     },
     get: function (path, onSuccess, onError) {
-      var user = $localstorage.getObject('currentUser');
+      var user = $localStorage.getObject('currentUser');
       $http.get(API_URL + this.signature(path)).
       success(function(data, status, headers, config) {
         onSuccess(data);
@@ -46,51 +46,13 @@ angular.module('encore.services', [])
       error(function(data, status, headers, config) {
         onError(data);
       });
-    }
-  };
-}])
-
-.factory('$localNotification', ['$rootScope', '$window', function ($rootScope, $window) {
-  return {
-    init: function () {
-      cordova.plugins.notification.local.hasPermission(function (granted) {
-        if (!granted) {
-          cordova.plugins.notification.local.registerPermission(function (granted) {});
-        }
-      });
-
-      // cordova.plugins.notification.local.onadd = function (id, state, json) {
-      //   console.log('---- onadd');
-      //   console.log(arguments);
-      //   alert('on add\n' + Array.apply(null, arguments).join("\n"));
-      // };
-
-      // cordova.plugins.notification.local.ontrigger = function (id, state, json) {
-      //   console.log('---- ontrigger');
-      //   console.log(arguments);
-      //   alert('on trigger\n' + Array.apply(null, arguments).join("\n"));
-      // };
-
-      cordova.plugins.notification.local.onclick = function (id, state, json, data) {
-        $rootScope.$emit('onClickNotification', id, state, json, data);
-      };
-
-      // cordova.plugins.notification.local.oncancel = function (id, state, json) {
-      //   console.log('---- oncancel');
-      //   console.log(arguments);
-      //   alert('on cancel\n' + Array.apply(null, arguments).join("\n"));
-      // };
-
-      $window.notificationId = Date.now();
-
-      $window.addNotification = function (notification) {
-        notification.id = ++$window.notificationId;
-        cordova.plugins.notification.local.add(notification);
-      };
     },
-    add: function (notification) {
-      cordova.plugins.notification.local.add(notification);
-      console.log('notification added;');
+    post: function (path, postData, onSuccess, onError) {
+      $http.post(API_URL + this.signature(path), postData).
+      success(function(user, status, headers, config) {
+      }).
+      error(function(data, status, headers, config) {
+      });
     }
   };
 }])

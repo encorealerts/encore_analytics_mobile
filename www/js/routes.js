@@ -20,11 +20,12 @@ App.config(function($httpProvider, $stateProvider, $urlRouterProvider) {
     controller: 'AppCtrl'
   })
 
-  .state('app.publish', {
-    url: "/publish",
+  .state('app.settings', {
+    url: "/settings",
     views: {
       'menuContent': {
-        templateUrl: "templates/publish.html"
+        templateUrl: "templates/settings.html",
+        controller: 'SettingsCtrl'
       }
     }
   })

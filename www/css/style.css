@@ -24,3 +24,8 @@
   max-width: 80%;
   margin: 0 auto;
 }
+
+.status-text {
+  color: #c0c0c0;
+  text-align:center;
+}

@@ -3,6 +3,7 @@ angular.module('encore.controllers', [])
 .controller('AppCtrl', function($rootScope, $scope, $state, $api) {
   $scope.logout = function () {
     $rootScope.authenticatedUser = null;
+    $rootScope.currentUser = null;
     $api.logout();
   };
 
@@ -11,28 +12,42 @@ angular.module('encore.controllers', [])
   };
 })
 
-.controller('LoginCtrl', function ($rootScope, $scope, $http, $api, $state, $localstorage, $ionicBackdrop, $ionicPopup, $networkConnection, API_URL) {
+.controller('LoginCtrl', function ($rootScope, $scope, $filter, $http, $api, $state, $localStorage, $ionicBackdrop, $ionicPopup, $networkConnection, API_URL) {
   $scope.loginData = {
     email: '',
     password: ''
   };
 
-  var currentUser = $localstorage.getObject('currentUser');
+  var currentUser = $localStorage.getObject('currentUser');
   if (currentUser) {
     $scope.loginData.email = currentUser.email;
   }
 
   $scope.doLogin = function() {
     $ionicBackdrop.retain();
-    $http.post(API_URL + '/login', {user: {email: $scope.loginData.email, password: $scope.loginData.password}}).
+    $http.post(API_URL + '/login',
+    { user: {email: $scope.loginData.email, password: $scope.loginData.password},
+      device: window.apiClientDevice
+    }).
     success(function(user, status, headers, config) {
-      $localstorage.setObject('currentUser', {
+      $localStorage.setObject('currentUser', {
         name: user.name,
         email: user.email,
         authentication_token: user.authentication_token
       });
       $rootScope.authenticatedUser = user;
-      $state.go('app.timeline');
+      $api.get('/businesses',
+        function onSuccess(businesses) {
+          $rootScope.businesses = businesses;
+          window.businesses = businesses;
+          window.currentBusiness = $filter('getById')(businesses, user.current_business_id);
+          $state.go('app.timeline');
+        },
+        function onError(e) {
+          alert('Error loading brand list.')
+          console.log(e);
+        }
+      );
     }).
     error(function(data, status, headers, config) {
       if ($networkConnection.check()) {
@@ -49,53 +64,100 @@ angular.module('encore.controllers', [])
 
 })
 
-.controller('TimelineCtrl', function($scope, $rootScope, $localNotification, $ionicBackdrop, $api, SERVER_URL) {
+.controller('TimelineCtrl', [
+           '$state', '$scope', '$rootScope', '$localStorage', '$filter', '$ionicBackdrop', '$ionicLoading', '$api', 'SERVER_URL',
+  function( $state,   $scope,   $rootScope,   $localStorage,   $filter,   $ionicBackdrop,   $ionicLoading,   $api,   SERVER_URL) {
 
-  $scope.viewAlert = function (id) {
-    window.open(SERVER_URL + $api.signature('/alerts/'+ id), '_blank', 'location=yes');
-  };
+    $scope.viewAlert = function (id) {
+      window.open(SERVER_URL + $api.signature('/alerts/'+ id), '_blank', 'location=yes');
+    };
 
-  $scope.loadAlerts = function () {
-    $ionicBackdrop.retain();
-    var queryString = ($rootScope.alerts && $rootScope.alerts[0]) ? ('?skipTo=' + $rootScope.alerts[0].id) : '';
-    $api.get('/alerts' + queryString,
-    function onSuccess(alerts) {
-      if (queryString == '') { // first run
-        $scope.alerts = alerts;
-      } else { // notify new alerts
-        var
-          i = 0,
-          j = alerts.length,
-          alert = null;
-        for (; i<j; i++) {
-          alert = alerts[i];
-          $scope.alerts.unshift(alert);
-          $localNotification.add({
-            autoCancel: true,
-            message: alert.subject,
-            json:    { alertId: alert.id }
-          });
-        }
+    $scope.loadAlerts = function () {
+      $scope.statusText = '';
+      $ionicLoading.show({
+        template: 'Loading alerts...'
+      });
+      $ionicBackdrop.retain();
+      $scope.alerts = [];
+      var businessId = window.currentBusiness.id;
+      var queryString = '?business_id=' + businessId;
+      $scope.allAlerts = $scope.allAlerts || [];
+      $scope.allAlerts[businessId] = $scope.allAlerts[businessId] || [];
+
+      if ($scope.allAlerts[businessId][0]) {
+        queryString += '&skipTo=' + $scope.allAlerts[businessId][0].id;
       }
-      $rootScope.alerts = $scope.alerts;
-    },
-    function onError(error) {
-      console.log(error);
-    });
-    $scope.$broadcast('scroll.refreshComplete');//Stop the ion-refresher from spinning
-    $ionicBackdrop.release();
-  };
 
-  $scope.loadAlerts();
-  $rootScope.$on('reloadAlerts', $scope.loadAlerts);
-  $rootScope.$on('onClickNotification', function (event, id, state, json, data) {
-    $scope.viewAlert((JSON.parse(json)).alertId);
+      $api.get('/alerts' + queryString,
+        function onSuccess(alerts) {
+          angular.forEach(alerts, function (alert) {
+            if(!$filter('getById')($scope.allAlerts[businessId], alert.id)) {
+              $scope.allAlerts[businessId].unshift(alert);
+            }
+          });
+          $scope.alerts = $scope.allAlerts[businessId];
+          $ionicLoading.hide();
+          if ($scope.alerts.length === 0) {
+            $scope.statusText = 'No alerts found';
+          }
+        },
+        function onError(error) {
+          console.log(error);
+        }
+      );
+      $scope.$broadcast('scroll.refreshComplete'); // stops the ion-refresher from spinning
+      $ionicBackdrop.release();
+    };
+
+    $scope.forcePageTitle = function () {
+      var els = document.querySelectorAll('.title.title-center.header-item');
+      angular.forEach(els, function (el) {
+        if (el.textContent.indexOf('Feed') > -1) {
+          el.textContent = window.currentBusiness.name + "'s Feed";
+        }
+      });
+    };
+
+    $scope.$on('$stateChangeSuccess', function () {
+      $scope.business = window.currentBusiness;
+      $scope.forcePageTitle();
+      $scope.loadAlerts();
+    });
+
+    $rootScope.$on('reloadAlerts', $scope.loadAlerts);
+    $rootScope.$on('viewAlert', function (event, id) {
+      $scope.viewAlert(id);
+    });
+  }
+])
+
+.controller('SettingsCtrl', function ($rootScope, $scope, $state, $api, $timeout) {
+  $scope.$on('$stateChangeSuccess', function () {
+    $scope.currentBusinessId = window.currentBusiness.id;
   });
 
-})
+  $scope.reloadSettings = function () {
+    $api.get('/businesses',
+      function onSuccess(businesses) {
+        window.businesses = businesses;
+      },
+      function onError(e) {
+        alert('Error loading brand list.')
+        console.log(e);
+      }
+    );
+    $scope.$broadcast('scroll.refreshComplete'); // stops the ion-refresher from spinning
+  };
 
-.controller('AlertCtrl', function($scope, $rootScope, $stateParams, $filter) {
-  $scope.alert = $filter('getById')($rootScope.alerts, $stateParams.alertId);
+  $scope.setCurrentBusiness = function (index) {
+    window.currentBusiness = $scope.businesses[index];
+    $timeout(function () {
+      $rootScope.$digest(function () {
+        $rootScope.feedTitle = window.currentBusiness.name;
+      });
+    });
+  };
+
 })
 
 ;
