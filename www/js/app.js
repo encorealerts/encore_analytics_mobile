@@ -30,7 +30,7 @@ App.run(function($ionicPlatform, $rootScope, $networkConnection, $localStorage, 
 
       onNotificationAPN = function (event) {
         var user = $localStorage.getObject('currentUser');
-        if (user && user.id !== event.userId) {
+        if (user && user.id != event.userId) {
           $rootScope.authenticatedUser = null;
           $rootScope.currentUser = null;
           $api.logout();
@@ -55,12 +55,6 @@ App.run(function($ionicPlatform, $rootScope, $networkConnection, $localStorage, 
     if (window.StatusBar) {
       StatusBar.styleDefault();
     }
-
-    // document.addEventListener("resume", function () {
-    //   setTimeout(function () {
-    //     $rootScope.$emit('reloadAlerts');
-    //   }, 0);
-    // }, false);
 
   });
 

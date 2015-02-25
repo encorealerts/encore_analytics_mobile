@@ -31,6 +31,7 @@ angular.module('encore.controllers', [])
     }).
     success(function(user, status, headers, config) {
       $localStorage.setObject('currentUser', {
+        id: user.id,
         name: user.name,
         email: user.email,
         authentication_token: user.authentication_token
@@ -131,7 +132,7 @@ angular.module('encore.controllers', [])
   }
 ])
 
-.controller('SettingsCtrl', function ($rootScope, $scope, $state, $api, $timeout) {
+.controller('SettingsCtrl', function ($rootScope, $scope, $state, $api) {
   $scope.$on('$stateChangeSuccess', function () {
     $scope.currentBusinessId = window.currentBusiness.id;
   });
@@ -151,11 +152,6 @@ angular.module('encore.controllers', [])
 
   $scope.setCurrentBusiness = function (index) {
     window.currentBusiness = $scope.businesses[index];
-    $timeout(function () {
-      $rootScope.$digest(function () {
-        $rootScope.feedTitle = window.currentBusiness.name;
-      });
-    });
   };
 
 })
