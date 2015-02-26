@@ -42,6 +42,7 @@ angular.module('encore.controllers', [])
           $rootScope.businesses = businesses;
           window.businesses = businesses;
           window.currentBusiness = $filter('getById')(businesses, user.current_business_id);
+          $localStorage.setObject('currentBusiness', window.currentBusiness);
           $state.go('app.timeline');
         },
         function onError(e) {
@@ -99,7 +100,7 @@ angular.module('encore.controllers', [])
           $scope.alerts = $scope.allAlerts[businessId];
           $ionicLoading.hide();
           if ($scope.alerts.length === 0) {
-            $scope.statusText = 'No alerts found';
+            $scope.statusText = "Looks like you don't have any alerts yet!";
           }
         },
         function onError(error) {
@@ -132,7 +133,7 @@ angular.module('encore.controllers', [])
   }
 ])
 
-.controller('SettingsCtrl', function ($rootScope, $scope, $state, $api) {
+.controller('SettingsCtrl', function ($rootScope, $scope, $state, $api, $localStorage) {
   $scope.$on('$stateChangeSuccess', function () {
     $scope.currentBusinessId = window.currentBusiness.id;
   });
@@ -152,6 +153,7 @@ angular.module('encore.controllers', [])
 
   $scope.setCurrentBusiness = function (index) {
     window.currentBusiness = $scope.businesses[index];
+    $localStorage.setObject('currentBusiness', window.currentBusiness);
   };
 
 })

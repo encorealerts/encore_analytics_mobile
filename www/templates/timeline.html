@@ -6,6 +6,7 @@
         <img ng-src="./img/badges/{{alert.alert_type.category}}.png">
         <h2>{{alert.activity.actor.name}} (@{{alert.activity.actor.screen_name}})</h2>
         <p>{{alert.subject}}</p>
+        <p>{{alert.activity.created_at | date: 'h:mm a - d MMM y'}}</p>
       </ion-item>
     </ion-list>
     <h5 class="status-text" ng-show="statusText !== ''">{{statusText}}</h5>

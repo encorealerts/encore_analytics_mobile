@@ -28,8 +28,13 @@ angular.module('encore.services', [])
     },
     signature: function (path) {
       var user = $localStorage.getObject('currentUser');
+      var business = $localStorage.getObject('currentBusiness');
+      var business_id = business ? business.id : user.current_business_id;
+      var business_param = business_id ? '&business_id=' + business_id : '';
       var connector = path.indexOf('?') > -1 ? '&' : '?';
-      return path + connector + 'user_email=' + encodeURIComponent(user.email) + '&user_token=' + user.authentication_token
+      var signedUrl = path + connector + 'user_email=' + encodeURIComponent(user.email) + business_param + '&user_token=' + user.authentication_token;
+      console.log('signedUrl: ' + signedUrl);
+      return signedUrl;
     },
     logout: function () {
       var user = $localStorage.getObject('currentUser');
