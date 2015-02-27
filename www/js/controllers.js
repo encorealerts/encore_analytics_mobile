@@ -71,7 +71,7 @@ angular.module('encore.controllers', [])
   function( $state,   $scope,   $rootScope,   $localStorage,   $filter,   $ionicBackdrop,   $ionicLoading,   $api,   SERVER_URL) {
 
     $scope.viewAlert = function (id) {
-      window.open(SERVER_URL + $api.signature('/alerts/'+ id), '_blank', 'location=yes');
+      window.iabOpen(SERVER_URL + $api.signature('/alerts/'+ id));
     };
 
     $scope.loadAlerts = function () {

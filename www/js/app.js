@@ -56,6 +56,30 @@ App.run(function($ionicPlatform, $rootScope, $networkConnection, $localStorage, 
       StatusBar.styleDefault();
     }
 
+
+    // Global InAppBrowser reference
+    window.iabRef = null;
+
+    // Inject our custom CSS into the InAppBrowser window
+    window.iabChangeBackgroundColor = function () {
+      iabRef.insertCSS({
+        // code: "#side-bar { top:-40px; height:100px; }"
+      }, function () {
+        // alert("Styles Altered");
+      });
+    };
+
+    window.iabClose = function (event) {
+      window.iabRef.removeEventListener('loadstop', iabChangeBackgroundColor);
+      window.iabRef.removeEventListener('exit', iabClose);
+    };
+
+    window.iabOpen = function (url) {
+      window.iabRef = window.open(url, '_blank', 'location=yes;toolbar=no');
+      window.iabRef.addEventListener('loadstop', iabChangeBackgroundColor);
+      window.iabRef.addEventListener('exit', iabClose);
+    };
+
   });
 
 });
