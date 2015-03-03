@@ -70,8 +70,30 @@ angular.module('encore.controllers', [])
            '$state', '$scope', '$rootScope', '$localStorage', '$filter', '$ionicBackdrop', '$ionicLoading', '$api', 'SERVER_URL',
   function( $state,   $scope,   $rootScope,   $localStorage,   $filter,   $ionicBackdrop,   $ionicLoading,   $api,   SERVER_URL) {
 
+    // Opens the Alert in web Feed, hiding the menu.
     $scope.viewAlert = function (id) {
-      window.iabOpen(SERVER_URL + $api.signature('/alerts/'+ id));
+      var ref = window.open(SERVER_URL + $api.signature('/alerts/'+ id), '_blank', 'location=yes,toolbarposition=top,transitionstyle=fliphorizontal');
+      iabCustomizeCSS = function (event) {
+        var css = [];
+        css.push('.inAppBrowserWrap {background: #ef473a}');
+        css.push('.inAppBrowserWrap menu {background: #ef473a}');
+        css.push('.inAppBrowserWrap menu li {color: #fff; background: #ef473a;}');
+        css.push('.inAppBrowserWrap menu li.disabled {color: #777}');
+        css.push('#side-bar {display:none}');
+        css.push('#content-wrapper {margin-top:0}');
+        css.push('#content-wrapper-inner {padding:10px 36px}');
+        ref.insertCSS({
+          code: css.join(' ')
+        }, function () {
+          // alert("Styles Altered");
+        });
+      };
+      iabClose = function (event) {
+        ref.removeEventListener('loadstop', iabCustomizeCSS);
+        ref.removeEventListener('exit', iabClose);
+      };
+      ref.addEventListener('loadstop', iabCustomizeCSS);
+      ref.addEventListener('exit', iabClose);
     };
 
     $scope.loadAlerts = function () {

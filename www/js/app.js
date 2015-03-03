@@ -11,74 +11,72 @@ App.run(function($ionicPlatform, $rootScope, $networkConnection, $localStorage, 
     window.apiClientDevice = window.device || {};
 
     if (window.cordova) {
+
       cordova.getAppVersion(function (appVersion) {
         window.apiClientDevice.app_version = appVersion;
       });
-    }
 
-    if (window.cordova && window.plugins.pushNotification) {
-      var pushNotification = window.plugins.pushNotification;
+      if (window.plugins.pushNotification) {
+        var pushNotification = window.plugins.pushNotification;
 
-      pnTokenHandler = function (result) {
-        $localStorage.set('apn_token', result);
-        window.apiClientDevice.apn_token = result;
+        pnTokenHandler = function (result) {
+          $localStorage.set('apn_token', result);
+          window.apiClientDevice.apn_token = result;
+        };
+
+        pnErrorHandler = function (result) {
+          console.log('pnErrorHandler = ' + error);
+        };
+
+        onNotificationAPN = function (event) {
+          var user = $localStorage.getObject('currentUser');
+          if (user && user.id != event.userId) {
+            $rootScope.authenticatedUser = null;
+            $rootScope.currentUser = null;
+            $api.logout();
+          } else {
+            window.currentBusiness = $filter('getById')(window.businesses, event.businessId);
+            $rootScope.$emit('viewAlert', event.alertId);
+          }
+        };
+
+        pushNotification.register(pnTokenHandler, pnErrorHandler, {
+          "badge":"true",
+          "sound":"true",
+          "alert":"true",
+          "ecb": "onNotificationAPN"
+        });
+      }
+
+      if (window.cordova.plugins.Keyboard) {
+        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      }
+
+      // Global InAppBrowser reference
+      window.iabRef = null;
+      window.open = cordova.InAppBrowser.open;
+      window.iabCustomizeCSS = function () {
+        iabRef.insertCSS({
+          code: "#side-bar {display:none;}"
+        }, function () {
+          // alert("Styles Altered");
+        });
+      };
+      window.iabOpen = function (url) {
+        iabRef = window.open(url, '_blank', 'location=yes,toolbarposition=top,transitionstyle=fliphorizontal');
+        // iabRef.addEventListener('loadstop', iabCustomizeCSS);
+        // iabRef.addEventListener('exit', iabClose);
+      };
+      window.iabClose = function (event) {
+        iabRef.removeEventListener('loadstop', iabCustomizeCSS);
+        iabRef.removeEventListener('exit', iabClose);
       };
 
-      pnErrorHandler = function (result) {
-        console.log('pnErrorHandler = ' + error);
-      };
-
-      onNotificationAPN = function (event) {
-        var user = $localStorage.getObject('currentUser');
-        if (user && user.id != event.userId) {
-          $rootScope.authenticatedUser = null;
-          $rootScope.currentUser = null;
-          $api.logout();
-        } else {
-          window.currentBusiness = $filter('getById')(window.businesses, event.businessId);
-          $rootScope.$emit('viewAlert', event.alertId);
-        }
-      };
-
-      pushNotification.register(pnTokenHandler, pnErrorHandler, {
-        "badge":"true",
-        "sound":"true",
-        "alert":"true",
-        "ecb": "onNotificationAPN"
-      });
-    }
-
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
+    } // if (window.cordova)
 
     if (window.StatusBar) {
       StatusBar.styleDefault();
     }
-
-
-    // Global InAppBrowser reference
-    window.iabRef = null;
-
-    // Inject our custom CSS into the InAppBrowser window
-    window.iabChangeBackgroundColor = function () {
-      iabRef.insertCSS({
-        // code: "#side-bar { top:-40px; height:100px; }"
-      }, function () {
-        // alert("Styles Altered");
-      });
-    };
-
-    window.iabClose = function (event) {
-      window.iabRef.removeEventListener('loadstop', iabChangeBackgroundColor);
-      window.iabRef.removeEventListener('exit', iabClose);
-    };
-
-    window.iabOpen = function (url) {
-      window.iabRef = window.open(url, '_blank', 'location=yes;toolbar=no');
-      window.iabRef.addEventListener('loadstop', iabChangeBackgroundColor);
-      window.iabRef.addEventListener('exit', iabClose);
-    };
 
   });
 

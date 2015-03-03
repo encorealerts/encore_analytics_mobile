@@ -15,9 +15,9 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "org.apache.cordova.inappbrowser",
     "https://github.com/phonegap-build/PushPlugin.git",
     "https://github.com/christocracy/cordova-plugin-background-fetch.git",
-    "https://github.com/whiteoctober/cordova-plugin-app-version.git"
+    "https://github.com/whiteoctober/cordova-plugin-app-version.git",
+    "org.apache.cordova.inappbrowser"
   ]
 }
