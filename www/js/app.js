@@ -6,8 +6,6 @@ App.constant('API_URL', 'http://staging.feed.encorealert.com/api/v1');
 App.run(function($ionicPlatform, $rootScope, $networkConnection, $localStorage, $filter, $api) {
   $ionicPlatform.ready(function () {
 
-    $networkConnection.check();
-
     window.apiClientDevice = window.device || {};
 
     if (window.cordova) {
@@ -31,11 +29,9 @@ App.run(function($ionicPlatform, $rootScope, $networkConnection, $localStorage, 
         onNotificationAPN = function (event) {
           var user = $localStorage.getObject('currentUser');
           if (user && user.id != event.userId) {
-            $rootScope.authenticatedUser = null;
-            $rootScope.currentUser = null;
             $api.logout();
           } else {
-            window.currentBusiness = $filter('getById')(window.businesses, event.businessId);
+            $localStorage.setObject('currentBusiness', $filter('getById')(window.businesses, event.businessId));
             $rootScope.$emit('viewAlert', event.alertId);
           }
         };
@@ -51,26 +47,6 @@ App.run(function($ionicPlatform, $rootScope, $networkConnection, $localStorage, 
       if (window.cordova.plugins.Keyboard) {
         cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       }
-
-      // Global InAppBrowser reference
-      window.iabRef = null;
-      window.open = cordova.InAppBrowser.open;
-      window.iabCustomizeCSS = function () {
-        iabRef.insertCSS({
-          code: "#side-bar {display:none;}"
-        }, function () {
-          // alert("Styles Altered");
-        });
-      };
-      window.iabOpen = function (url) {
-        iabRef = window.open(url, '_blank', 'location=yes,toolbarposition=top,transitionstyle=fliphorizontal');
-        // iabRef.addEventListener('loadstop', iabCustomizeCSS);
-        // iabRef.addEventListener('exit', iabClose);
-      };
-      window.iabClose = function (event) {
-        iabRef.removeEventListener('loadstop', iabCustomizeCSS);
-        iabRef.removeEventListener('exit', iabClose);
-      };
 
     } // if (window.cordova)
 

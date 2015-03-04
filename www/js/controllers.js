@@ -1,9 +1,11 @@
+;function stopSpinner($scope) {
+  $scope.$broadcast('scroll.refreshComplete'); // stops the ion-refresher from spinning
+}
+
 angular.module('encore.controllers', [])
 
-.controller('AppCtrl', function($rootScope, $scope, $state, $api) {
+.controller('AppCtrl', function($rootScope, $networkConnection, $scope, $state, $api) {
   $scope.logout = function () {
-    $rootScope.authenticatedUser = null;
-    $rootScope.currentUser = null;
     $api.logout();
   };
 
@@ -30,19 +32,11 @@ angular.module('encore.controllers', [])
       device: window.apiClientDevice
     }).
     success(function(user, status, headers, config) {
-      $localStorage.setObject('currentUser', {
-        id: user.id,
-        name: user.name,
-        email: user.email,
-        authentication_token: user.authentication_token
-      });
-      $rootScope.authenticatedUser = user;
+      $localStorage.setObject('currentUser', user);
       $api.get('/businesses',
         function onSuccess(businesses) {
           $rootScope.businesses = businesses;
-          window.businesses = businesses;
-          window.currentBusiness = $filter('getById')(businesses, user.current_business_id);
-          $localStorage.setObject('currentBusiness', window.currentBusiness);
+          $localStorage.setObject('currentBusiness', $filter('getById')(businesses, user.current_business_id));
           $state.go('app.timeline');
         },
         function onError(e) {
@@ -67,25 +61,31 @@ angular.module('encore.controllers', [])
 })
 
 .controller('TimelineCtrl', [
-           '$state', '$scope', '$rootScope', '$localStorage', '$filter', '$ionicBackdrop', '$ionicLoading', '$api', 'SERVER_URL',
-  function( $state,   $scope,   $rootScope,   $localStorage,   $filter,   $ionicBackdrop,   $ionicLoading,   $api,   SERVER_URL) {
+           '$state', '$scope', '$rootScope', '$localStorage', '$filter', '$ionicBackdrop', '$ionicLoading', '$api', '$networkConnection', 'SERVER_URL',
+  function( $state,   $scope,   $rootScope,   $localStorage,   $filter,   $ionicBackdrop,   $ionicLoading,   $api,   $networkConnection,   SERVER_URL) {
 
-    // Opens the Alert in web Feed, hiding the menu.
+    $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+      $scope.forcePageTitle();
+      if (!$scope.alerts || $scope.alerts.length === 0) {
+        $scope.loadAlerts();
+      }
+    });
+
+    // Opens the Alert in web Feed, hiding the menu and missions bar.
     $scope.viewAlert = function (id) {
+      if (!$networkConnection.check()) {
+        return;
+      }
       var ref = window.open(SERVER_URL + $api.signature('/alerts/'+ id), '_blank', 'location=yes,toolbarposition=top,transitionstyle=fliphorizontal');
       iabCustomizeCSS = function (event) {
         var css = [];
-        css.push('.inAppBrowserWrap {background: #ef473a}');
-        css.push('.inAppBrowserWrap menu {background: #ef473a}');
-        css.push('.inAppBrowserWrap menu li {color: #fff; background: #ef473a;}');
-        css.push('.inAppBrowserWrap menu li.disabled {color: #777}');
-        css.push('#side-bar {display:none}');
+        css.push('#side-bar, #mission-wrapper {display:none}');
         css.push('#content-wrapper {margin-top:0}');
         css.push('#content-wrapper-inner {padding:10px 36px}');
         ref.insertCSS({
           code: css.join(' ')
         }, function () {
-          // alert("Styles Altered");
+          // styles altered
         });
       };
       iabClose = function (event) {
@@ -97,13 +97,18 @@ angular.module('encore.controllers', [])
     };
 
     $scope.loadAlerts = function () {
+      if (!$networkConnection.check()) {
+        stopSpinner($scope);
+        return;
+      }
+
       $scope.statusText = '';
       $ionicLoading.show({
         template: 'Loading alerts...'
       });
       $ionicBackdrop.retain();
       $scope.alerts = [];
-      var businessId = window.currentBusiness.id;
+      var businessId = $localStorage.getObject('currentBusiness').id;
       var queryString = '?business_id=' + businessId;
       $scope.allAlerts = $scope.allAlerts || [];
       $scope.allAlerts[businessId] = $scope.allAlerts[businessId] || [];
@@ -129,7 +134,7 @@ angular.module('encore.controllers', [])
           console.log(error);
         }
       );
-      $scope.$broadcast('scroll.refreshComplete'); // stops the ion-refresher from spinning
+      stopSpinner($scope);
       $ionicBackdrop.release();
     };
 
@@ -137,16 +142,10 @@ angular.module('encore.controllers', [])
       var els = document.querySelectorAll('.title.title-center.header-item');
       angular.forEach(els, function (el) {
         if (el.textContent.indexOf('Feed') > -1) {
-          el.textContent = window.currentBusiness.name + "'s Feed";
+          el.textContent = $localStorage.getObject('currentBusiness').name + "'s Feed";
         }
       });
     };
-
-    $scope.$on('$stateChangeSuccess', function () {
-      $scope.business = window.currentBusiness;
-      $scope.forcePageTitle();
-      $scope.loadAlerts();
-    });
 
     $rootScope.$on('reloadAlerts', $scope.loadAlerts);
     $rootScope.$on('viewAlert', function (event, id) {
@@ -155,28 +154,36 @@ angular.module('encore.controllers', [])
   }
 ])
 
-.controller('SettingsCtrl', function ($rootScope, $scope, $state, $api, $localStorage) {
-  $scope.$on('$stateChangeSuccess', function () {
-    $scope.currentBusinessId = window.currentBusiness.id;
-  });
+.controller('SettingsCtrl', function ($rootScope, $scope, $state, $api, $localStorage, $networkConnection) {
 
-  $scope.reloadSettings = function () {
+  $scope.loadSettings = function () {
+    if (!$networkConnection.check()) {
+      stopSpinner($scope);
+      return;
+    }
     $api.get('/businesses',
       function onSuccess(businesses) {
-        window.businesses = businesses;
+        $scope.businesses = businesses;
       },
       function onError(e) {
         alert('Error loading brand list.')
         console.log(e);
       }
     );
-    $scope.$broadcast('scroll.refreshComplete'); // stops the ion-refresher from spinning
+    stopSpinner($scope);
   };
 
   $scope.setCurrentBusiness = function (index) {
-    window.currentBusiness = $scope.businesses[index];
-    $localStorage.setObject('currentBusiness', window.currentBusiness);
+    $localStorage.setObject('currentBusiness', $scope.businesses[index]);
+    $rootScope.$emit('reloadAlerts');
   };
+
+  $scope.$on('$stateChangeSuccess', function () {
+    if (!$scope.businesses || $scope.businesses.length === 0) {
+      $scope.loadSettings();
+    }
+    $scope.currentBusinessId = $localStorage.getObject('currentBusiness').id;
+  });
 
 })
 

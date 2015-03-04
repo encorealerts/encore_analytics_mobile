@@ -20,7 +20,7 @@ angular.module('encore.services', [])
   };
 }])
 
-.factory('$api', ['$http', '$state', '$localStorage', 'API_URL', function ($http, $state, $localStorage, API_URL) {
+.factory('$api', ['$http', '$state', '$localStorage', '$networkConnection', 'API_URL', function ($http, $state, $localStorage, $networkConnection, API_URL) {
   return {
     authenticated: function () {
       var user = $localStorage.getObject('currentUser');
@@ -32,9 +32,8 @@ angular.module('encore.services', [])
       var business_id = business ? business.id : user.current_business_id;
       var business_param = business_id ? '&business_id=' + business_id : '';
       var connector = path.indexOf('?') > -1 ? '&' : '?';
-      var signedUrl = path + connector + 'user_email=' + encodeURIComponent(user.email) + business_param + '&user_token=' + user.authentication_token;
-      console.log('signedUrl: ' + signedUrl);
-      return signedUrl;
+      var signedPath = path + connector + 'user_email=' + encodeURIComponent(user.email) + business_param + '&user_token=' + user.authentication_token;
+      return signedPath;
     },
     logout: function () {
       var user = $localStorage.getObject('currentUser');
@@ -43,7 +42,6 @@ angular.module('encore.services', [])
       $state.go('login');
     },
     get: function (path, onSuccess, onError) {
-      var user = $localStorage.getObject('currentUser');
       $http.get(API_URL + this.signature(path)).
       success(function(data, status, headers, config) {
         onSuccess(data);
@@ -65,19 +63,17 @@ angular.module('encore.services', [])
 .factory('$networkConnection', ['$ionicPopup', function ($ionicPopup) {
   return {
     check: function () {
-      if(window.Connection) {
-        if (navigator.connection.type == Connection.NONE) {
-          $ionicPopup.confirm({
-            title: "Internet Disconnected",
-            content: "The internet is disconnected on your device."
-          })
-          .then(function(result) {
-            if(!result) {
-              ionic.Platform.exitApp();
-            }
-          });
-          return false;
-        }
+      if (!navigator.onLine || (window.Connection && navigator.connection.type == Connection.NONE)) {
+        $ionicPopup.confirm({
+          title: "Internet Disconnected",
+          content: "The internet is disconnected on your device."
+        })
+        .then(function(result) {
+          if(!result) {
+            ionic.Platform.exitApp();
+          }
+        });
+        return false;
       }
       return true;
     }

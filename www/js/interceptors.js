@@ -1,10 +1,11 @@
 angular.module('encore.interceptors', [])
 
-  .factory('TokenAuthInterceptor', ['$q', '$rootScope', '$location', function ($q, $rootScope, $location) {
+  .factory('TokenAuthInterceptor', ['$q', '$rootScope', '$localStorage', '$location', function ($q, $rootScope, $localStorage, $location) {
     return {
       request: function (config) {
         if (config.url.indexOf('/login') < 0) {
-          if (!$rootScope.authenticatedUser) {
+          var currentUser = $localStorage.getObject('currentUser');
+          if (!currentUser || !currentUser.authentication_token) {
             $location.path('/login');
             return $q.reject(config);
           }
@@ -12,7 +13,8 @@ angular.module('encore.interceptors', [])
         return config;
       },
       responseError: function (rejection) {
-        if (rejection.status === 401 || !$rootScope.authenticatedUser) {
+        var currentUser = $localStorage.getObject('currentUser');
+        if (rejection.status === 401 || !currentUser || !currentUser.authentication_token) {
           $location.path('/login');
         }
         return $q.reject(rejection);

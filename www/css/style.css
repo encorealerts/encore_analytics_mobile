@@ -1,5 +1,9 @@
 /* Add your own CSS if you like */
 
+.popup-container {
+  z-index: 15;
+}
+
 .pane, .view {
   background-color: none;
   background: url('../img/background.png');
