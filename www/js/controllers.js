@@ -78,15 +78,15 @@ angular.module('encore.controllers', [])
       }
       var ref = window.open(SERVER_URL + $api.signature('/alerts/'+ id), '_blank', 'location=yes,toolbarposition=top,transitionstyle=fliphorizontal');
       iabCustomizeCSS = function (event) {
-        var css = [];
-        css.push('#side-bar, #mission-wrapper {display:none}');
-        css.push('#content-wrapper {margin-top:0}');
-        css.push('#content-wrapper-inner {padding:10px 36px}');
-        ref.insertCSS({
-          code: css.join(' ')
-        }, function () {
-          // styles altered
-        });
+        // var css = [];
+        // css.push('#side-bar, #mission-wrapper {display:none}');
+        // css.push('#content-wrapper {margin-top:0}');
+        // css.push('#content-wrapper-inner {padding:10px 36px}');
+        // ref.insertCSS({
+        //   code: css.join(' ')
+        // }, function () {
+        //   // styles altered
+        // });
       };
       iabClose = function (event) {
         ref.removeEventListener('loadstop', iabCustomizeCSS);
@@ -104,9 +104,10 @@ angular.module('encore.controllers', [])
 
       $scope.statusText = '';
       $ionicLoading.show({
-        template: 'Loading alerts...'
+        template: 'Loading alerts...',
+        duration: 8000
       });
-      $ionicBackdrop.retain();
+      // $ionicBackdrop.retain();
       $scope.alerts = [];
       var businessId = $localStorage.getObject('currentBusiness').id;
       var queryString = '?business_id=' + businessId;
@@ -125,17 +126,21 @@ angular.module('encore.controllers', [])
             }
           });
           $scope.alerts = $scope.allAlerts[businessId];
-          $ionicLoading.hide();
           if ($scope.alerts.length === 0) {
             $scope.statusText = "Looks like you don't have any alerts yet!";
           }
+          $ionicLoading.hide();
+          // $ionicBackdrop.release();
+          stopSpinner($scope);
         },
         function onError(error) {
           console.log(error);
+          $scope.statusText = "Oops! Looks like something went wrong...";
+          $ionicLoading.hide();
+          // $ionicBackdrop.release();
+          stopSpinner($scope);
         }
       );
-      stopSpinner($scope);
-      $ionicBackdrop.release();
     };
 
     $scope.forcePageTitle = function () {
@@ -164,6 +169,7 @@ angular.module('encore.controllers', [])
     $api.get('/businesses',
       function onSuccess(businesses) {
         $scope.businesses = businesses;
+        $localStorage.setObject('businesses', businesses);
       },
       function onError(e) {
         alert('Error loading brand list.')
@@ -175,7 +181,7 @@ angular.module('encore.controllers', [])
 
   $scope.setCurrentBusiness = function (index) {
     $localStorage.setObject('currentBusiness', $scope.businesses[index]);
-    $rootScope.$emit('reloadAlerts');
+    $scope.$emit('reloadAlerts');
   };
 
   $scope.$on('$stateChangeSuccess', function () {
