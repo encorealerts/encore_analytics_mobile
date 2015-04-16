@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B5F1CC16-05AE-47FB-BEDE-C9F2053A51B1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>EncoreAlert</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0E790ADA6CDF45E8D7E1522F03A98C85B94346EF</key>
 		<string>bitbucket.org:lucianocosta/encorealertmobile2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>platforms/ios/EncoreAlert.xcodeproj</string>
+	<string>platforms/ios/EncoreAlert.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0E790ADA6CDF45E8D7E1522F03A98C85B94346EF</key>
