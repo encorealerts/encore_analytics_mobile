@@ -1,0 +1,14 @@
+<ion-view title="Feed">
+  <ion-content>
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="loadAlerts()"></ion-refresher>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="alert in alerts" ng-click="viewAlert(alert.id)">
+        <img ng-src="./img/badges/{{alert.alert_type.category}}.png">
+        <h2>{{alert.activity.actor.name}} (@{{alert.activity.actor.screen_name}})</h2>
+        <p>{{alert.subject}}</p>
+        <p>{{alert.activity.created_at | date: 'h:mm a - d MMM y'}}</p>
+      </ion-item>
+    </ion-list>
+    <h5 class="status-text" ng-show="statusText !== ''">{{statusText}}</h5>
+  </ion-content>
+</ion-view>

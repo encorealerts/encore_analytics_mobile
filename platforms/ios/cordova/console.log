@@ -1,0 +1,1319 @@
+2015-02-01 19:31:01.299 EncoreAlert[20225:586044] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/807B9D4F-97ED-4A64-8780-07DF420D1043/Library/Cookies/Cookies.binarycookies
+2015-02-01 19:31:01.575 EncoreAlert[20225:586044] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 19:31:01.575 EncoreAlert[20225:586044] Multi-tasking -> Device: YES, App: YES
+2015-02-01 19:31:01.577 EncoreAlert[20225:586044] Unlimited access to network resources
+2015-02-01 19:31:01.841 EncoreAlert[20225:586044] [CDVTimer][keyboard] 0.140011ms
+2015-02-01 19:31:01.842 EncoreAlert[20225:586044] [CDVTimer][localnotification] 0.052989ms
+2015-02-01 19:31:01.842 EncoreAlert[20225:586044] [CDVTimer][localnotification] 0.009954ms
+2015-02-01 19:31:01.842 EncoreAlert[20225:586044] [CDVTimer][TotalPluginStartup] 1.004040ms
+2015-02-01 19:31:02.311 EncoreAlert[20225:586044] Resetting plugins due to page load.
+2015-02-01 19:31:02.715 EncoreAlert[20225:586044] Finished load of: http://192.168.1.9:8100/#/app/playlists
+2015-02-01 19:31:02.742 EncoreAlert[20225:586044] ------- keyboard tem!
+2015-02-01 19:31:02.753 EncoreAlert[20225:586044] THREAD WARNING: ['LocalNotification'] took '10.977783' ms. Plugin should use a background thread.
+2015-02-01 19:49:53.909 EncoreAlert[23162:595405] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/DDF809FC-4B74-41D6-973E-6D43C5350503/Library/Cookies/Cookies.binarycookies
+2015-02-01 19:49:55.063 EncoreAlert[23162:595405] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 19:49:55.063 EncoreAlert[23162:595405] Multi-tasking -> Device: YES, App: YES
+2015-02-01 19:49:55.151 EncoreAlert[23162:595405] Unlimited access to network resources
+2015-02-01 19:49:58.528 EncoreAlert[23162:595405] [CDVTimer][keyboard] 0.073016ms
+2015-02-01 19:49:58.659 EncoreAlert[23162:595405] [CDVTimer][localnotification] 131.588995ms
+2015-02-01 19:49:58.660 EncoreAlert[23162:595405] [CDVTimer][localnotification] 0.018954ms
+2015-02-01 19:49:58.660 EncoreAlert[23162:595405] [CDVTimer][TotalPluginStartup] 132.564008ms
+2015-02-01 19:50:02.672 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 19:50:05.941 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 19:50:06.554 EncoreAlert[23162:595405] THREAD WARNING: ['Device'] took '224.228271' ms. Plugin should use a background thread.
+2015-02-01 19:50:55.216 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 19:50:55.452 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 19:57:13.259 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 19:57:13.655 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 19:57:20.890 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 19:57:21.081 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 19:57:54.610 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 19:57:54.795 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 19:57:57.942 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 19:57:58.121 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:01:22.402 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 20:01:22.672 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:01:32.084 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 20:01:32.319 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:03:27.578 EncoreAlert[23162:595405] Resetting plugins due to page load.
+2015-02-01 20:03:27.791 EncoreAlert[23162:595405] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:03:27.816 EncoreAlert[23162:595405] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:03:27.816 EncoreAlert[23162:595405] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1020366578",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:05:44.530 EncoreAlert[25859:602098] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/1D0527E3-EFBD-4C97-A03A-0EE9CD9881E0/Library/Cookies/Cookies.binarycookies
+2015-02-01 20:05:44.949 EncoreAlert[25859:602098] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 20:05:44.949 EncoreAlert[25859:602098] Multi-tasking -> Device: YES, App: YES
+2015-02-01 20:05:44.951 EncoreAlert[25859:602098] Unlimited access to network resources
+2015-02-01 20:05:45.357 EncoreAlert[25859:602098] [CDVTimer][keyboard] 0.074029ms
+2015-02-01 20:05:45.357 EncoreAlert[25859:602098] [CDVTimer][localnotification] 0.046968ms
+2015-02-01 20:05:45.357 EncoreAlert[25859:602098] [CDVTimer][localnotification] 0.008047ms
+2015-02-01 20:05:45.357 EncoreAlert[25859:602098] [CDVTimer][TotalPluginStartup] 0.699997ms
+2015-02-01 20:05:46.195 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:05:47.144 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:05:47.153 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:05:47.153 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification16757581",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:06:57.763 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:06:58.036 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:06:58.127 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:06:58.128 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1770266710",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:06:58.128 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:07:30.393 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:07:30.696 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:07:30.765 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:07:30.765 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification272606378",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:07:30.766 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:08:10.791 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:08:11.066 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:08:11.166 EncoreAlert[25859:602098] THREAD WARNING: ['Device'] took '44.111816' ms. Plugin should use a background thread.
+2015-02-01 20:08:11.171 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:08:11.172 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification966602128",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:08:11.172 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:08:11.174 EncoreAlert[25859:602098] hasPermission: true
+2015-02-01 20:09:20.338 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:09:20.552 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:09:20.630 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:09:20.630 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1169353881",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:09:20.631 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:09:20.634 EncoreAlert[25859:602098] hasPermission: true
+2015-02-01 20:09:28.487 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:09:28.688 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:09:28.824 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:09:28.825 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1175159640",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:09:28.825 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:09:28.831 EncoreAlert[25859:602098] hasPermission: true
+2015-02-01 20:11:41.253 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:11:41.437 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:11:41.537 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:11:41.537 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification184388456",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:11:41.538 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:12:21.253 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:12:21.495 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:12:21.634 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:12:21.634 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification716550004",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:12:21.634 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:12:31.033 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:12:31.265 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:12:31.360 EncoreAlert[25859:602098] ---- events binded
+2015-02-01 20:12:31.360 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:12:31.361 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1098562179",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:12:31.361 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:12:31.368 EncoreAlert[25859:602098] hasPermission: true
+2015-02-01 20:14:00.471 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:14:00.754 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:14:00.787 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:14:00.787 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification750967951",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:14:00.787 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:14:26.434 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:14:26.585 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:14:26.671 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:14:26.671 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification109617609",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:14:26.672 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:14:26.675 EncoreAlert[25859:602098] hasPermission: true
+2015-02-01 20:15:18.306 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:15:18.452 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:15:18.557 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:15:18.558 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification305021783",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:15:18.558 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:15:18.558 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification305021784",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:15:18.558 EncoreAlert[25859:602098] notification added;
+2015-02-01 20:15:18.566 EncoreAlert[25859:602098] hasPermission: true
+2015-02-01 20:15:22.543 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:15:22.719 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:15:22.751 EncoreAlert[25859:602098] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 20:15:22.751 EncoreAlert[25859:602098] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1668257079",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 20:15:22.754 EncoreAlert[25859:602098] hasPermission: true
+2015-02-01 20:26:10.642 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:26:11.168 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 20:26:52.487 EncoreAlert[25859:602098] Resetting plugins due to page load.
+2015-02-01 20:26:52.600 EncoreAlert[25859:602098] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 21:47:48.270 EncoreAlert[42806:651964] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/522AF918-C9AA-4A50-85DA-C012CAA48945/Library/Cookies/Cookies.binarycookies
+2015-02-01 21:47:48.960 EncoreAlert[42806:651964] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 21:47:48.961 EncoreAlert[42806:651964] Multi-tasking -> Device: YES, App: YES
+2015-02-01 21:47:49.030 EncoreAlert[42806:651964] Unlimited access to network resources
+2015-02-01 21:47:49.508 EncoreAlert[42806:651964] [CDVTimer][keyboard] 0.068009ms
+2015-02-01 21:47:49.533 EncoreAlert[42806:651964] [CDVTimer][localnotification] 25.609016ms
+2015-02-01 21:47:49.534 EncoreAlert[42806:651964] [CDVTimer][localnotification] 0.025988ms
+2015-02-01 21:47:49.534 EncoreAlert[42806:651964] [CDVTimer][TotalPluginStartup] 26.807010ms
+2015-02-01 21:47:50.676 EncoreAlert[42806:651964] Resetting plugins due to page load.
+2015-02-01 21:47:52.337 EncoreAlert[42806:651964] THREAD WARNING: ['Keyboard'] took '48.123291' ms. Plugin should use a background thread.
+2015-02-01 21:47:52.337 EncoreAlert[42806:651964] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 21:47:52.920 EncoreAlert[42806:651964] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 21:47:56.292 EncoreAlert[42806:651964] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 21:47:56.292 EncoreAlert[42806:651964] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1491833220",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 21:49:17.784 EncoreAlert[42806:651964] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 21:51:34.819 EncoreAlert[43611:654053] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/C1730F6D-86D2-4910-BA50-7B6944696801/Library/Cookies/Cookies.binarycookies
+2015-02-01 21:51:37.167 EncoreAlert[43611:654053] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 21:51:37.167 EncoreAlert[43611:654053] Multi-tasking -> Device: YES, App: YES
+2015-02-01 21:51:37.530 EncoreAlert[43611:654053] Unlimited access to network resources
+2015-02-01 21:51:38.305 EncoreAlert[43611:654053] [CDVTimer][keyboard] 0.075042ms
+2015-02-01 21:51:38.351 EncoreAlert[43611:654053] [CDVTimer][localnotification] 45.814991ms
+2015-02-01 21:51:38.351 EncoreAlert[43611:654053] [CDVTimer][localnotification] 0.010967ms
+2015-02-01 21:51:38.351 EncoreAlert[43611:654053] [CDVTimer][TotalPluginStartup] 46.534002ms
+2015-02-01 21:51:40.095 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 21:51:41.290 EncoreAlert[43611:654053] THREAD WARNING: ['Device'] took '52.580078' ms. Plugin should use a background thread.
+2015-02-01 21:51:41.330 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 21:51:41.332 EncoreAlert[43611:654053] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 21:51:45.330 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 21:51:45.331 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification49895736",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:04:53.483 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:04:54.150 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:04:58.344 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:04:58.345 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1912236469",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:05:03.920 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:05:04.486 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:05:08.654 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:05:08.654 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1281470675",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:06:53.398 EncoreAlert[43611:654053] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 22:08:24.504 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:08:24.943 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:08:28.019 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:08:28.442 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:08:32.591 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:08:32.592 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification894052692",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:08:48.607 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:08:48.870 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:08:52.968 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:08:52.969 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1341746108",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:08:53.251 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:08:53.723 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:08:57.943 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:08:58.022 EncoreAlert[43611:654053] THREAD WARNING: ['LocalNotification'] took '79.683838' ms. Plugin should use a background thread.
+2015-02-01 22:08:58.023 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1379221402",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:09:03.944 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:09:13.943 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:09:23.942 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:09:33.942 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:09:43.950 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:09:53.949 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:10:02.447 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:10:02.902 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:10:07.057 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:10:07.057 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification81876678",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:12:21.232 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:12:21.707 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:12:25.786 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:12:25.787 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1455052242",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:12:58.333 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:13:08.331 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:13:18.335 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:13:28.335 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:13:38.334 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:13:48.335 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:13:58.335 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:14:08.335 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:14:18.336 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:14:28.338 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:14:38.337 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:14:48.339 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:14:58.340 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:15:08.339 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:15:18.340 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:15:28.342 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:15:38.341 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:15:48.344 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:15:52.267 EncoreAlert[43611:654053] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 22:16:44.064 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:16:44.084 EncoreAlert[43611:654053] THREAD WARNING: ['Console'] took '20.115967' ms. Plugin should use a background thread.
+2015-02-01 22:16:53.927 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:17:03.928 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:17:13.928 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:17:23.930 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:17:33.930 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:17:43.934 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:17:53.935 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:18:03.932 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:18:13.934 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:18:14.011 EncoreAlert[43611:654053] THREAD WARNING: ['Console'] took '77.242920' ms. Plugin should use a background thread.
+2015-02-01 22:18:23.933 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:18:33.937 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:18:43.937 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:18:53.935 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:19:03.936 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:19:13.937 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:19:23.938 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:19:33.940 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:19:43.939 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:19:53.940 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:20:03.942 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:20:04.190 EncoreAlert[43611:654053] THREAD WARNING: ['Console'] took '248.126953' ms. Plugin should use a background thread.
+2015-02-01 22:20:13.940 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:20:23.940 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:20:24.018 EncoreAlert[43611:654053] THREAD WARNING: ['Console'] took '77.785889' ms. Plugin should use a background thread.
+2015-02-01 22:20:33.941 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:20:43.940 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:20:53.941 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:21:03.944 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:21:07.939 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:21:08.358 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:21:12.361 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:21:12.362 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1475049252",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:21:29.211 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:21:29.741 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:21:32.733 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:21:33.008 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:21:37.028 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:21:37.028 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification724448842",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:21:48.878 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:21:49.279 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:21:49.347 EncoreAlert[43611:654053] THREAD WARNING: ['Device'] took '60.141113' ms. Plugin should use a background thread.
+2015-02-01 22:21:53.359 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:21:53.360 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification923134212",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:22:52.094 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:22:52.576 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:22:56.615 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:22:56.615 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification982067626",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:34:19.057 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:34:19.500 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:34:23.507 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:34:23.508 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification182792967",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:35:11.459 EncoreAlert[43611:654053] Resetting plugins due to page load.
+2015-02-01 22:35:11.890 EncoreAlert[43611:654053] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:35:15.933 EncoreAlert[43611:654053] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:35:15.934 EncoreAlert[43611:654053] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification313646769",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:36:51.687 EncoreAlert[43611:654053] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 22:37:06.592 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:37:16.594 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:37:20.816 EncoreAlert[43611:654053] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 22:37:28.679 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:37:38.556 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:37:38.715 EncoreAlert[43611:654053] THREAD WARNING: ['Console'] took '158.924072' ms. Plugin should use a background thread.
+2015-02-01 22:37:42.903 EncoreAlert[43611:654053] THREAD WARNING: ['Keyboard'] took '89.709961' ms. Plugin should use a background thread.
+2015-02-01 22:37:49.293 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:37:49.600 EncoreAlert[43611:654053] null
+2015-02-01 22:37:59.293 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:37:59.296 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:37:59.652 EncoreAlert[43611:654053] null
+2015-02-01 22:37:59.652 EncoreAlert[43611:654053] null
+2015-02-01 22:38:09.292 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:09.298 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:09.621 EncoreAlert[43611:654053] null
+2015-02-01 22:38:09.622 EncoreAlert[43611:654053] null
+2015-02-01 22:38:19.299 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:19.299 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:19.664 EncoreAlert[43611:654053] null
+2015-02-01 22:38:19.665 EncoreAlert[43611:654053] null
+2015-02-01 22:38:29.298 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:29.301 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:29.643 EncoreAlert[43611:654053] null
+2015-02-01 22:38:29.643 EncoreAlert[43611:654053] null
+2015-02-01 22:38:39.293 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:39.302 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:39.617 EncoreAlert[43611:654053] null
+2015-02-01 22:38:39.617 EncoreAlert[43611:654053] null
+2015-02-01 22:38:49.305 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:49.305 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:49.645 EncoreAlert[43611:654053] null
+2015-02-01 22:38:49.645 EncoreAlert[43611:654053] null
+2015-02-01 22:38:59.299 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:59.307 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:38:59.628 EncoreAlert[43611:654053] null
+2015-02-01 22:38:59.628 EncoreAlert[43611:654053] null
+2015-02-01 22:39:09.297 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:09.306 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:09.624 EncoreAlert[43611:654053] null
+2015-02-01 22:39:09.625 EncoreAlert[43611:654053] null
+2015-02-01 22:39:19.298 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:19.305 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:19.673 EncoreAlert[43611:654053] null
+2015-02-01 22:39:19.674 EncoreAlert[43611:654053] null
+2015-02-01 22:39:29.298 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:29.306 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:29.626 EncoreAlert[43611:654053] null
+2015-02-01 22:39:29.627 EncoreAlert[43611:654053] null
+2015-02-01 22:39:39.298 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:39.308 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:39.623 EncoreAlert[43611:654053] null
+2015-02-01 22:39:39.623 EncoreAlert[43611:654053] null
+2015-02-01 22:39:49.298 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:49.306 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:49.621 EncoreAlert[43611:654053] null
+2015-02-01 22:39:49.622 EncoreAlert[43611:654053] null
+2015-02-01 22:39:59.300 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:59.308 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:39:59.624 EncoreAlert[43611:654053] null
+2015-02-01 22:39:59.624 EncoreAlert[43611:654053] null
+2015-02-01 22:40:09.299 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:09.409 EncoreAlert[43611:654053] THREAD WARNING: ['Console'] took '109.235107' ms. Plugin should use a background thread.
+2015-02-01 22:40:09.453 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:09.751 EncoreAlert[43611:654053] null
+2015-02-01 22:40:09.752 EncoreAlert[43611:654053] null
+2015-02-01 22:40:19.324 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:19.439 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:19.660 EncoreAlert[43611:654053] null
+2015-02-01 22:40:19.661 EncoreAlert[43611:654053] null
+2015-02-01 22:40:29.313 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:29.416 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:29.686 EncoreAlert[43611:654053] null
+2015-02-01 22:40:29.686 EncoreAlert[43611:654053] null
+2015-02-01 22:40:39.314 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:39.415 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:39.691 EncoreAlert[43611:654053] null
+2015-02-01 22:40:39.691 EncoreAlert[43611:654053] null
+2015-02-01 22:40:49.312 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:49.418 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:49.634 EncoreAlert[43611:654053] null
+2015-02-01 22:40:49.634 EncoreAlert[43611:654053] null
+2015-02-01 22:40:59.315 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:59.416 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:40:59.642 EncoreAlert[43611:654053] null
+2015-02-01 22:40:59.642 EncoreAlert[43611:654053] null
+2015-02-01 22:41:09.315 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:41:09.419 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:41:09.644 EncoreAlert[43611:654053] null
+2015-02-01 22:41:09.644 EncoreAlert[43611:654053] null
+2015-02-01 22:41:19.316 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:41:19.416 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:41:19.717 EncoreAlert[43611:654053] null
+2015-02-01 22:41:19.718 EncoreAlert[43611:654053] null
+2015-02-01 22:41:29.319 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:41:29.416 EncoreAlert[43611:654053] rodano....
+2015-02-01 22:41:29.640 EncoreAlert[43611:654053] null
+2015-02-01 22:41:29.640 EncoreAlert[43611:654053] null
+2015-02-01 22:57:05.503 EncoreAlert[53300:680711] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/B79707F7-67DD-42AC-82AA-D64114AB508D/Library/Cookies/Cookies.binarycookies
+2015-02-01 22:57:07.949 EncoreAlert[53300:680711] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 22:57:07.950 EncoreAlert[53300:680711] Multi-tasking -> Device: YES, App: YES
+2015-02-01 22:57:08.080 EncoreAlert[53300:680711] Unlimited access to network resources
+2015-02-01 22:57:09.358 EncoreAlert[53300:680711] [CDVTimer][keyboard] 0.093997ms
+2015-02-01 22:57:09.409 EncoreAlert[53300:680711] [CDVTimer][localnotification] 51.061988ms
+2015-02-01 22:57:09.410 EncoreAlert[53300:680711] [CDVTimer][localnotification] 0.016987ms
+2015-02-01 22:57:09.410 EncoreAlert[53300:680711] [CDVTimer][TotalPluginStartup] 51.975012ms
+2015-02-01 22:57:11.343 EncoreAlert[53300:680711] Resetting plugins due to page load.
+2015-02-01 22:57:12.215 EncoreAlert[53300:680711] THREAD WARNING: ['Device'] took '10.072021' ms. Plugin should use a background thread.
+2015-02-01 22:57:12.307 EncoreAlert[53300:680711] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 22:57:12.419 EncoreAlert[53300:680711] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 22:57:17.249 EncoreAlert[53300:680711] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 22:57:17.249 EncoreAlert[53300:680711] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1969875875",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 22:58:15.161 EncoreAlert[53300:680711] rodano....
+2015-02-01 22:58:15.196 EncoreAlert[53300:680711] THREAD WARNING: ['Console'] took '34.485840' ms. Plugin should use a background thread.
+2015-02-01 22:58:16.764 EncoreAlert[53300:680711] null
+2015-02-01 22:58:25.168 EncoreAlert[53300:680711] rodano....
+2015-02-01 22:58:25.498 EncoreAlert[53300:680711] null
+2015-02-01 22:58:35.161 EncoreAlert[53300:680711] rodano....
+2015-02-01 22:58:35.503 EncoreAlert[53300:680711] null
+2015-02-01 22:58:45.161 EncoreAlert[53300:680711] rodano....
+2015-02-01 22:58:45.517 EncoreAlert[53300:680711] null
+2015-02-01 23:01:20.560 EncoreAlert[54129:682972] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/2323BA30-E20B-467B-BEFB-1F0267A9FDA1/Library/Cookies/Cookies.binarycookies
+2015-02-01 23:01:21.244 EncoreAlert[54129:682972] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 23:01:21.245 EncoreAlert[54129:682972] Multi-tasking -> Device: YES, App: YES
+2015-02-01 23:01:21.258 EncoreAlert[54129:682972] Unlimited access to network resources
+2015-02-01 23:01:21.698 EncoreAlert[54129:682972] [CDVTimer][keyboard] 0.073016ms
+2015-02-01 23:01:21.730 EncoreAlert[54129:682972] [CDVTimer][localnotification] 31.322956ms
+2015-02-01 23:01:21.730 EncoreAlert[54129:682972] [CDVTimer][localnotification] 0.008047ms
+2015-02-01 23:01:21.730 EncoreAlert[54129:682972] [CDVTimer][TotalPluginStartup] 31.924009ms
+2015-02-01 23:01:23.131 EncoreAlert[54129:682972] Resetting plugins due to page load.
+2015-02-01 23:01:23.640 EncoreAlert[54129:682972] THREAD WARNING: ['Device'] took '13.255127' ms. Plugin should use a background thread.
+2015-02-01 23:01:23.648 EncoreAlert[54129:682972] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:01:23.663 EncoreAlert[54129:682972] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:01:27.664 EncoreAlert[54129:682972] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:01:27.664 EncoreAlert[54129:682972] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification829219075",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:02:06.467 EncoreAlert[54129:682972] rodano....
+2015-02-01 23:02:06.542 EncoreAlert[54129:682972] THREAD WARNING: ['Console'] took '74.881104' ms. Plugin should use a background thread.
+2015-02-01 23:02:07.044 EncoreAlert[54129:682972] null
+2015-02-01 23:02:16.476 EncoreAlert[54129:682972] rodano....
+2015-02-01 23:02:16.837 EncoreAlert[54129:682972] null
+2015-02-01 23:02:26.469 EncoreAlert[54129:682972] rodano....
+2015-02-01 23:02:26.813 EncoreAlert[54129:682972] null
+2015-02-01 23:02:36.469 EncoreAlert[54129:682972] rodano....
+2015-02-01 23:02:36.835 EncoreAlert[54129:682972] null
+2015-02-01 23:13:14.336 EncoreAlert[56434:689912] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/7361B688-6354-415C-AC96-DEB8E46D78B1/Library/Cookies/Cookies.binarycookies
+2015-02-01 23:13:15.732 EncoreAlert[56434:689912] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 23:13:15.733 EncoreAlert[56434:689912] Multi-tasking -> Device: YES, App: YES
+2015-02-01 23:13:15.752 EncoreAlert[56434:689912] Unlimited access to network resources
+2015-02-01 23:13:16.345 EncoreAlert[56434:689912] [CDVTimer][keyboard] 0.072002ms
+2015-02-01 23:13:16.374 EncoreAlert[56434:689912] [CDVTimer][localnotification] 28.614998ms
+2015-02-01 23:13:16.374 EncoreAlert[56434:689912] [CDVTimer][localnotification] 0.018001ms
+2015-02-01 23:13:16.375 EncoreAlert[56434:689912] [CDVTimer][TotalPluginStartup] 29.610991ms
+2015-02-01 23:13:18.203 EncoreAlert[56434:689912] Resetting plugins due to page load.
+2015-02-01 23:13:18.641 EncoreAlert[56434:689912] THREAD WARNING: ['Device'] took '27.354736' ms. Plugin should use a background thread.
+2015-02-01 23:13:18.709 EncoreAlert[56434:689912] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:13:18.722 EncoreAlert[56434:689912] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:13:22.717 EncoreAlert[56434:689912] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:13:22.718 EncoreAlert[56434:689912] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1456895544",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:15:36.586 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:15:46.582 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:15:56.582 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:16:06.583 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:16:16.585 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:16:26.586 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:16:36.585 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:16:46.587 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:16:56.588 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:17:06.587 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:17:16.589 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:17:26.588 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:17:36.589 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:17:46.589 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:17:56.590 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:18:06.593 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:18:16.590 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:18:26.592 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:18:36.591 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:18:46.594 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:18:56.594 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:19:06.594 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:19:16.594 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:19:26.595 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:19:36.594 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:19:46.595 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:19:56.595 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:20:06.595 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:20:06.673 EncoreAlert[56434:689912] THREAD WARNING: ['Console'] took '77.880859' ms. Plugin should use a background thread.
+2015-02-01 23:20:16.600 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:20:26.598 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:20:36.598 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:20:46.601 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:20:56.601 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:21:06.600 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:21:16.607 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:21:26.609 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:21:36.608 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:21:46.606 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:21:56.610 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:22:06.609 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:22:16.609 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:22:26.608 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:22:36.609 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:22:46.610 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:22:56.613 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:23:06.613 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:23:16.612 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:23:26.614 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:23:36.616 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:23:46.618 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:23:56.616 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:24:06.618 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:24:16.617 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:24:26.620 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:24:36.618 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:24:46.620 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:24:56.622 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:25:06.622 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:25:16.621 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:25:26.621 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:25:36.622 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:25:46.623 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:25:56.622 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:26:06.621 EncoreAlert[56434:689912] rodano....
+2015-02-01 23:26:13.705 EncoreAlert[56434:689912] Resetting plugins due to page load.
+2015-02-01 23:26:13.922 EncoreAlert[56434:689912] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:28:37.624 EncoreAlert[56434:689912] Resetting plugins due to page load.
+2015-02-01 23:28:37.951 EncoreAlert[56434:689912] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:28:41.980 EncoreAlert[56434:689912] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:28:41.980 EncoreAlert[56434:689912] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification546161687",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:28:56.082 EncoreAlert[56434:689912] Resetting plugins due to page load.
+2015-02-01 23:28:56.403 EncoreAlert[56434:689912] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:29:00.438 EncoreAlert[56434:689912] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:29:00.438 EncoreAlert[56434:689912] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1339128558",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:30:09.522 EncoreAlert[56434:689912] Resetting plugins due to page load.
+2015-02-01 23:30:09.736 EncoreAlert[56434:689912] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:30:13.811 EncoreAlert[56434:689912] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:30:13.811 EncoreAlert[56434:689912] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification856065568",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:33:30.128 EncoreAlert[56434:689912] Resetting plugins due to page load.
+2015-02-01 23:33:30.458 EncoreAlert[56434:689912] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:33:34.529 EncoreAlert[56434:689912] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:33:34.529 EncoreAlert[56434:689912] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification514636668",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:33:42.705 EncoreAlert[56434:689912] Resetting plugins due to page load.
+2015-02-01 23:33:42.932 EncoreAlert[56434:689912] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:33:46.951 EncoreAlert[56434:689912] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:33:46.951 EncoreAlert[56434:689912] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification427181401",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:35:37.888 EncoreAlert[59646:698877] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/596E0FFB-CB7F-4F40-A198-D0BB4395B2CA/Library/Cookies/Cookies.binarycookies
+2015-02-01 23:35:39.184 EncoreAlert[59646:698877] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-01 23:35:39.185 EncoreAlert[59646:698877] Multi-tasking -> Device: YES, App: YES
+2015-02-01 23:35:39.196 EncoreAlert[59646:698877] Unlimited access to network resources
+2015-02-01 23:35:39.574 EncoreAlert[59646:698877] [CDVTimer][keyboard] 0.082016ms
+2015-02-01 23:35:39.574 EncoreAlert[59646:698877] [CDVTimer][localnotification] 0.485003ms
+2015-02-01 23:35:39.574 EncoreAlert[59646:698877] [CDVTimer][localnotification] 0.012040ms
+2015-02-01 23:35:39.575 EncoreAlert[59646:698877] [CDVTimer][TotalPluginStartup] 1.229048ms
+2015-02-01 23:35:41.476 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:35:42.141 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:35:42.309 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:35:46.292 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:35:46.293 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1042712523",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:37:09.382 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:37:09.601 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:37:13.654 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:37:13.654 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1660742070",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:37:41.074 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:37:41.284 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:37:45.405 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:37:45.405 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification76529404",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:40:03.007 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:40:03.206 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:40:07.267 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:40:07.268 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification622488804",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:40:44.433 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:40:44.434 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification622488805",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:42:32.126 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:42:32.341 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:42:36.358 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:42:36.358 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1877435202",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:43:41.162 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:43:41.326 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:43:45.332 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:43:45.333 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification836839766",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:44:02.720 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:44:39.890 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:44:40.183 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:44:44.231 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:44:44.231 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1697425921",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:44:57.517 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:44:57.517 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1697425922",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:45:37.127 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:45:37.311 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:45:40.384 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:45:40.636 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:45:44.652 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:45:44.652 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1926853569",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:45:50.833 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:46:06.839 EncoreAlert[59646:698877] true
+2015-02-01 23:46:06.913 EncoreAlert[59646:698877] THREAD WARNING: ['Console'] took '74.432861' ms. Plugin should use a background thread.
+2015-02-01 23:46:06.914 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:46:06.915 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1926853570",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:46:55.342 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:46:55.357 EncoreAlert[59646:698877] THREAD WARNING: ['Console'] took '15.475098' ms. Plugin should use a background thread.
+2015-02-01 23:46:55.358 EncoreAlert[59646:698877] false
+2015-02-01 23:52:11.406 EncoreAlert[59646:698877] CDVWebViewDelegate: Navigation started when state=1
+2015-02-01 23:52:11.436 EncoreAlert[59646:698877] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-02-01 23:52:11.438 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:52:12.289 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:53:43.058 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:53:43.277 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:53:47.330 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:53:47.330 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification737227767",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:53:59.128 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:54:09.875 EncoreAlert[59646:698877] true
+2015-02-01 23:54:09.875 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:54:09.875 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification737227768",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:54:13.308 EncoreAlert[59646:698877] true
+2015-02-01 23:54:13.325 EncoreAlert[59646:698877] THREAD WARNING: ['Console'] took '16.991211' ms. Plugin should use a background thread.
+2015-02-01 23:54:13.326 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:54:13.326 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification737227769",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:54:20.116 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:54:20.116 EncoreAlert[59646:698877] false
+2015-02-01 23:54:30.097 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:54:30.097 EncoreAlert[59646:698877] false
+2015-02-01 23:54:36.056 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:54:36.056 EncoreAlert[59646:698877] false
+2015-02-01 23:54:39.938 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:54:39.938 EncoreAlert[59646:698877] false
+2015-02-01 23:54:46.108 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:54:46.108 EncoreAlert[59646:698877] false
+2015-02-01 23:54:49.944 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:54:49.945 EncoreAlert[59646:698877] false
+2015-02-01 23:54:56.030 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:54:56.033 EncoreAlert[59646:698877] false
+2015-02-01 23:54:59.940 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:54:59.941 EncoreAlert[59646:698877] false
+2015-02-01 23:55:06.038 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:55:06.061 EncoreAlert[59646:698877] THREAD WARNING: ['Console'] took '23.082764' ms. Plugin should use a background thread.
+2015-02-01 23:55:06.062 EncoreAlert[59646:698877] false
+2015-02-01 23:55:10.015 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:55:10.016 EncoreAlert[59646:698877] false
+2015-02-01 23:55:16.466 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:55:16.483 EncoreAlert[59646:698877] THREAD WARNING: ['Console'] took '16.569092' ms. Plugin should use a background thread.
+2015-02-01 23:55:16.483 EncoreAlert[59646:698877] false
+2015-02-01 23:55:19.962 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:55:19.962 EncoreAlert[59646:698877] false
+2015-02-01 23:55:26.145 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:55:26.145 EncoreAlert[59646:698877] false
+2015-02-01 23:55:29.972 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:55:29.972 EncoreAlert[59646:698877] false
+2015-02-01 23:55:36.035 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:55:36.036 EncoreAlert[59646:698877] false
+2015-02-01 23:55:40.024 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:55:40.024 EncoreAlert[59646:698877] false
+2015-02-01 23:55:40.968 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:55:41.163 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:55:45.181 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:55:45.182 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1867257374",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:55:52.736 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:56:02.708 EncoreAlert[59646:698877] true
+2015-02-01 23:56:02.708 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:56:02.709 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1867257375",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:56:27.465 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:56:27.543 EncoreAlert[59646:698877] THREAD WARNING: ['Console'] took '78.011230' ms. Plugin should use a background thread.
+2015-02-01 23:56:27.544 EncoreAlert[59646:698877] false
+2015-02-01 23:56:37.472 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:56:37.473 EncoreAlert[59646:698877] false
+2015-02-01 23:56:47.452 EncoreAlert[59646:698877] ?skipTo=18398
+2015-02-01 23:56:47.452 EncoreAlert[59646:698877] false
+2015-02-01 23:56:54.028 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:56:54.214 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:56:58.261 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:56:58.262 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification116606631",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:57:22.259 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:57:22.420 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:57:26.440 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:57:26.440 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1532348130",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:57:30.379 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:57:30.613 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:57:34.671 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:57:34.671 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1008036604",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:57:35.844 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:57:48.865 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:57:48.865 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1008036605",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-01 23:58:54.750 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-01 23:58:59.343 EncoreAlert[59646:698877] Snapshotting a view that has not been rendered results in an empty snapshot. Ensure your view has been rendered at least once before snapshotting or snapshot after screen updates.
+2015-02-01 23:59:26.877 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-01 23:59:27.054 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-01 23:59:31.059 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-01 23:59:31.059 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1731238752",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:01:04.958 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-02 00:01:05.291 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:01:09.295 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:01:09.296 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification1414041506",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:01:13.107 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-02 00:01:35.412 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-02 00:01:35.619 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:01:45.680 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:01:45.681 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification844222508",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:01:51.027 EncoreAlert[59646:698877] Resetting plugins due to page load.
+2015-02-02 00:01:51.225 EncoreAlert[59646:698877] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:01:54.010 EncoreAlert[59646:698877] BackgroundMode: On simulator apps never pause in background!
+2015-02-02 00:02:01.332 EncoreAlert[59646:698877] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:02:01.332 EncoreAlert[59646:698877] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification941875957",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:04:33.646 EncoreAlert[64081:711709] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/23666723-CE98-4DAA-BF5B-69479FAD37A9/Library/Cookies/Cookies.binarycookies
+2015-02-02 00:04:35.994 EncoreAlert[64081:711709] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-02 00:04:35.995 EncoreAlert[64081:711709] Multi-tasking -> Device: YES, App: YES
+2015-02-02 00:04:36.064 EncoreAlert[64081:711709] Unlimited access to network resources
+2015-02-02 00:04:36.451 EncoreAlert[64081:711709] [CDVTimer][keyboard] 0.069976ms
+2015-02-02 00:04:36.470 EncoreAlert[64081:711709] [CDVTimer][localnotification] 19.263983ms
+2015-02-02 00:04:36.471 EncoreAlert[64081:711709] [CDVTimer][localnotification] 0.012994ms
+2015-02-02 00:04:36.471 EncoreAlert[64081:711709] [CDVTimer][TotalPluginStartup] 20.096004ms
+2015-02-02 00:04:38.501 EncoreAlert[64081:711709] Resetting plugins due to page load.
+2015-02-02 00:04:39.131 EncoreAlert[64081:711709] THREAD WARNING: ['Device'] took '67.921875' ms. Plugin should use a background thread.
+2015-02-02 00:04:39.196 EncoreAlert[64081:711709] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:04:39.212 EncoreAlert[64081:711709] BackgroundMode: On simulator apps never pause in background!
+2015-02-02 00:04:49.378 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:04:49.378 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification667686980",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:06:48.111 EncoreAlert[64081:711709] Resetting plugins due to page load.
+2015-02-02 00:06:48.338 EncoreAlert[64081:711709] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:06:58.374 EncoreAlert[64081:711709] ---- window.notificationId: 1422842808368
+2015-02-02 00:06:58.374 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:06:58.375 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification972851236",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:07:08.960 EncoreAlert[64081:711709] Resetting plugins due to page load.
+2015-02-02 00:07:09.352 EncoreAlert[64081:711709] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:07:19.360 EncoreAlert[64081:711709] ---- window.notificationId: 1422842829357
+2015-02-02 00:07:19.360 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:07:19.361 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification37932633",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:07:26.700 EncoreAlert[64081:711709] Resetting plugins due to page load.
+2015-02-02 00:07:27.057 EncoreAlert[64081:711709] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:07:27.097 EncoreAlert[64081:711709] THREAD WARNING: ['Device'] took '28.711182' ms. Plugin should use a background thread.
+2015-02-02 00:07:35.026 EncoreAlert[64081:711709] BackgroundMode: On simulator apps never pause in background!
+2015-02-02 00:07:37.259 EncoreAlert[64081:711709] ---- window.notificationId: 1422842847118
+2015-02-02 00:07:37.260 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:07:37.260 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification4878701",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:11:25.929 EncoreAlert[64081:711709] BackgroundMode: On simulator apps never pause in background!
+2015-02-02 00:11:35.549 EncoreAlert[64081:711709] Snapshotting a view that has not been rendered results in an empty snapshot. Ensure your view has been rendered at least once before snapshotting or snapshot after screen updates.
+2015-02-02 00:14:10.928 EncoreAlert[64081:711709] CDVWebViewDelegate: Navigation started when state=1
+2015-02-02 00:14:11.004 EncoreAlert[64081:711709] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-02-02 00:14:11.005 EncoreAlert[64081:711709] Resetting plugins due to page load.
+2015-02-02 00:14:11.504 EncoreAlert[64081:711709] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:14:20.998 EncoreAlert[64081:711709] Resetting plugins due to page load.
+2015-02-02 00:14:21.277 EncoreAlert[64081:711709] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-02 00:14:31.374 EncoreAlert[64081:711709] ---- window.notificationId: 1422843261372
+2015-02-02 00:14:31.374 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:14:31.375 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification347750830",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:14:38.135 EncoreAlert[64081:711709] BackgroundMode: On simulator apps never pause in background!
+2015-02-02 00:14:43.398 EncoreAlert[64081:711709] ---- loading alerts...
+2015-02-02 00:14:43.398 EncoreAlert[64081:711709] ---- window.notificationId: 1422843261373
+2015-02-02 00:14:43.398 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:14:43.398 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification347750831",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:15:09.098 EncoreAlert[64081:711709] ---- loading alerts...
+2015-02-02 00:15:09.182 EncoreAlert[64081:711709] THREAD WARNING: ['Console'] took '83.178955' ms. Plugin should use a background thread.
+2015-02-02 00:15:09.182 EncoreAlert[64081:711709] ---- window.notificationId: 1422843261374
+2015-02-02 00:15:09.183 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:15:09.183 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification347750832",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:15:19.095 EncoreAlert[64081:711709] ---- loading alerts...
+2015-02-02 00:15:19.095 EncoreAlert[64081:711709] ---- window.notificationId: 1422843261375
+2015-02-02 00:15:19.096 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:15:19.096 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification347750833",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-02 00:15:29.100 EncoreAlert[64081:711709] ---- loading alerts...
+2015-02-02 00:15:29.100 EncoreAlert[64081:711709] ---- window.notificationId: 1422843261376
+2015-02-02 00:15:29.100 EncoreAlert[64081:711709] ERROR: Method 'registerPermission:' not defined in Plugin 'LocalNotification'
+2015-02-02 00:15:29.100 EncoreAlert[64081:711709] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "LocalNotification347750834",
+  "LocalNotification",
+  "registerPermission",
+  [
+
+  ]
+]
+2015-02-04 18:17:29.339 EncoreAlert[32082:226714] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-04 18:17:29.379 EncoreAlert[32082:226714] Multi-tasking -> Device: YES, App: YES
+2015-02-04 18:17:29.457 EncoreAlert[32082:226714] Unlimited access to network resources
+2015-02-04 18:17:30.916 EncoreAlert[32082:226714] [CDVTimer][keyboard] 0.131011ms
+2015-02-04 18:17:30.917 EncoreAlert[32082:226714] [CDVTimer][localnotification] 0.167012ms
+2015-02-04 18:17:30.917 EncoreAlert[32082:226714] [CDVTimer][localnotification] 0.019014ms
+2015-02-04 18:17:30.917 EncoreAlert[32082:226714] [CDVTimer][TotalPluginStartup] 21.791041ms
+2015-02-04 18:17:32.614 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 18:17:33.968 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 18:17:34.026 EncoreAlert[32082:226714] BackgroundMode: On simulator apps never pause in background!
+2015-02-04 18:26:20.469 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 18:26:20.879 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 18:29:31.553 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 18:29:31.814 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 18:31:11.317 EncoreAlert[32082:226714] notification added;
+2015-02-04 18:31:11.354 EncoreAlert[32082:226714] THREAD WARNING: ['Console'] took '36.994873' ms. Plugin should use a background thread.
+2015-02-04 18:31:14.361 EncoreAlert[32082:226714] notification added;
+2015-02-04 18:32:01.521 EncoreAlert[32082:226714] notification added;
+2015-02-04 18:32:01.567 EncoreAlert[32082:226714] THREAD WARNING: ['Console'] took '45.208252' ms. Plugin should use a background thread.
+2015-02-04 18:32:08.937 EncoreAlert[32082:226714] notification added;
+2015-02-04 18:32:09.087 EncoreAlert[32082:226714] THREAD WARNING: ['Console'] took '149.301025' ms. Plugin should use a background thread.
+2015-02-04 18:32:10.787 EncoreAlert[32082:226714] notification added;
+2015-02-04 18:32:14.253 EncoreAlert[32082:226714] notification added;
+2015-02-04 18:34:10.283 EncoreAlert[32082:226714] notification added;
+2015-02-04 18:35:18.680 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 18:35:19.031 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 18:36:02.875 EncoreAlert[32082:226714] THREAD WARNING: ['InAppBrowser'] took '1195.763184' ms. Plugin should use a background thread.
+2015-02-04 18:36:02.929 EncoreAlert[32082:226714] Tried to show IAB while already shown
+2015-02-04 18:36:03.412 EncoreAlert[32082:226714] webView:didFailLoadWithError - -999: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2015-02-04 18:40:15.672 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 18:40:15.685 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 18:40:15.859 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 18:52:24.531 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 18:52:24.558 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 18:52:24.931 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 18:58:17.582 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 18:58:17.609 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 18:58:18.030 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 18:59:29.941 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 18:59:29.942 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 18:59:30.110 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:00:33.685 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:00:33.721 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:00:33.883 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:03:57.313 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:03:57.339 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:03:57.649 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:04:38.174 EncoreAlert[32082:226714] THREAD WARNING: ['InAppBrowser'] took '271.994873' ms. Plugin should use a background thread.
+2015-02-04 19:05:08.611 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:05:08.611 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:05:08.802 EncoreAlert[32082:226714] Failed to load webpage with error: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2015-02-04 19:05:08.802 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:05:08.802 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:05:08.970 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:05:38.123 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:05:38.124 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:05:38.283 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:07:24.883 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:07:24.883 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:07:25.145 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:07:48.044 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:07:48.086 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:07:48.268 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:08:18.968 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:08:18.968 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:08:19.189 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:08:47.198 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:08:47.235 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:08:47.383 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:16:38.635 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:16:38.672 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:16:38.895 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:18:13.852 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:18:13.852 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:18:13.976 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-04 19:18:39.734 EncoreAlert[32082:226714] Resetting plugins due to page load.
+2015-02-04 19:18:39.734 EncoreAlert[32082:226714] IAB.close() called but it was already closed.
+2015-02-04 19:18:39.956 EncoreAlert[32082:226714] Finished load of: http://192.168.1.9:8100/#/login
+2015-02-27 11:00:38.909 EncoreAlert[56354:875855] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Data/Application/FCEFA645-ACD9-4DCE-A276-DE2B4E8A4019/Library/Cookies/Cookies.binarycookies
+2015-02-27 11:00:40.201 EncoreAlert[56354:875855] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-27 11:00:40.202 EncoreAlert[56354:875855] Multi-tasking -> Device: YES, App: YES
+2015-02-27 11:00:40.245 EncoreAlert[56354:875855] Unlimited access to network resources
+2015-02-27 11:00:42.536 EncoreAlert[56354:875855] [CDVTimer][keyboard] 0.069976ms
+2015-02-27 11:00:42.536 EncoreAlert[56354:875855] [CDVTimer][backgroundfetch] 0.069022ms
+2015-02-27 11:00:42.536 EncoreAlert[56354:875855] [CDVTimer][TotalPluginStartup] 18.796980ms
+2015-02-27 11:00:42.612 EncoreAlert[56354:875855] active
+2015-02-27 11:00:44.523 EncoreAlert[56354:875855] Resetting plugins due to page load.
+2015-02-27 11:00:45.473 EncoreAlert[56354:875855] Finished load of: file:///Users/lucianocosta/Library/Developer/CoreSimulator/Devices/5FCD7389-0814-4C35-9BC0-82C6074AC1E1/data/Containers/Bundle/Application/29167D89-EA25-4872-ADFE-240F589677E9/EncoreAlert.app/www/index.html#/login
+2015-02-27 11:00:46.610 EncoreAlert[56354:875855] THREAD WARNING: ['PushPlugin'] took '28.653320' ms. Plugin should use a background thread.

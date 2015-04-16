@@ -1,0 +1,39 @@
+/* Add your own CSS if you like */
+
+.popup-container {
+  z-index: 15;
+}
+
+.pane, .view {
+  background-color: none;
+  background: url('../img/background.png');
+}
+
+.header-bell {
+  margin-top: 40px;
+  height: 220px;
+  width: 100%;
+  margin-left: 0;
+  background: url('../img/white-bell-logo.png') no-repeat center center;
+  background-size: 170px;
+}
+
+.box-login {
+  background: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.box-login .list {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.status-text {
+  color: #c0c0c0;
+  text-align:center;
+}
+
+.inAppBrowserWrap {
+  background-color: #ef473a;
+}
